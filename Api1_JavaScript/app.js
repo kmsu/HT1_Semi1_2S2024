@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.json(responseObject);
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Express API escuchando en el puerto http://localhost:${port}`);
 });
 
